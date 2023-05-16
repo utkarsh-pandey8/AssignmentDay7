@@ -1,0 +1,20 @@
+<p>countries works!</p>
+<table border="1" cellspacing="5px" cellpadding="5px" align="center" style="font-size: 20px;">
+<thead bgcolor="aquamarine">
+    <tr>
+        <th>Captial</th>
+        <th>Region</th>
+        <th>Flag</th>
+        <th>Currency</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor = "let c of data">
+        <td>{{c.capital}}</td>
+        <td>{{c.region}}</td>
+        <td>{{c.flag}}</td>
+        <td>{{c.currencies | json}}</td>
+    </tr>
+</tbody>
+</table>
+
